@@ -10,8 +10,8 @@ $(document).ready(function() {
             contentType: false,
             processData: false,
             success: function(data) {
-                var vulnerabilities = data.vulnerabilities;
-                var cvssScores = data.cvss_scores;
+                var vulnerabilities = data.vulnerabilities || [];
+                var cvssScores = data.cvss_scores || [];
 
                 var vulnerabilitiesHtml = '';
                 if (vulnerabilities.length === 0) {

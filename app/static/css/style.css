@@ -71,3 +71,15 @@ section p {
 section .row > div {
     text-align: center;
 }
+pre code {
+    background-color: #ffe0e0; /* 취약 부분 하이라이트 색상 */
+    padding: 10px;
+    border-radius: 5px;
+    display: block;
+    white-space: pre-wrap;
+    color: #d63384; /* 폰트 색상 */
+}
+
+canvas {
+    margin-top: 30px;
+}
